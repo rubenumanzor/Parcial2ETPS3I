@@ -10,7 +10,7 @@ class DetalleScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var globalContext = context;
+    var valor = 0;
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 206, 206, 206),
       appBar: barDetalle(),
@@ -142,6 +142,44 @@ class DetalleScreen extends StatelessWidget {
                     ],
                   ),
                   //Colores
+                  Row(
+                    children: [
+                      SizedBox(
+                        width: 15,
+                      ),
+                      IconButton(
+                          onPressed: () {
+                            //El compañero uso StatelessWidget y me di cuenta tarde :'(
+                          },
+                          icon: Icon(
+                            Icons.circle,
+                            color: Colors.green,
+                          )),
+                      IconButton(
+                          onPressed: null,
+                          icon: Icon(Icons.circle, color: Colors.orange)),
+                      IconButton(
+                          onPressed: null,
+                          icon: Icon(Icons.circle, color: Colors.red)),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ElevatedButton.icon(
+                        onPressed: () {
+                          // Respond to button press
+                        },
+                        style: ElevatedButton.styleFrom(
+                            primary: Color.fromARGB(255, 167, 136, 124)),
+                        icon: Icon(Icons.shop_two_outlined, size: 18),
+                        label: Text("Comprar"),
+                      ),
+                    ],
+                  )
                 ],
               ),
             ]),
