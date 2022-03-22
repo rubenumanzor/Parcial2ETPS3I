@@ -8,6 +8,7 @@ void main() {
 
 class Parcial2 extends StatelessWidget {
   // This widget is the root of your application.
+  //
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,4 +21,3 @@ class Parcial2 extends StatelessWidget {
     );
   }
 }
-//Prue
